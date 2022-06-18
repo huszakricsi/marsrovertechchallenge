@@ -46,3 +46,7 @@ Holding together both position and orientation. Can also perform instructions
 
 ### Simulator
 Processing the input from the reader by creating the necessary objects for the simulation and making the rovers executes its instructions
+
+## Challenge description
+
+[Google Code Archive: Mars Rover Tech Challenge](https://code.google.com/archive/p/marsrovertechchallenge/)
