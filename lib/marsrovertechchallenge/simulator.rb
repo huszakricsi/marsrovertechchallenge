@@ -15,7 +15,8 @@ class Simulator
                           )
         rover.perform_instructions(rover_params[:instructions])
       end
-      { successful: true, rovers: rovers } #To maintain OOP principles the simulate method returns the result of the simulations
+
+      { successful: true, rovers: rovers, plateau: plateau } #To maintain OOP principles the simulate method returns the result of the simulations
     end
   end
 

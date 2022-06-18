@@ -24,6 +24,10 @@ module Marsrovertechchallenge
         simulator_params = reader.read
         result           = Simulator.simulate(*simulator_params)
 
+        if ENV['VISUALISE']=='true'
+          Printer.visualize(result)
+        end
+
         Printer.print_result(result)
       end
     end

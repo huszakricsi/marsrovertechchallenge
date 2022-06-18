@@ -3,12 +3,14 @@ class Rover
   TURN_INSTRUCTIONS = :L, :R
   MOVE_INSTRUCTIONS = :M
 
-  attr_accessor :position, :orientation, :step
+  attr_accessor :position, :orientation, :starting_position, :starting_orientation, :step
 
   def initialize(position, orientation)
-    self.position    = position
-    self.orientation = orientation
-    self.step        = 1 #indicating the speed of the car, and make more right the rover to exist, apart from holding together the position and orientation, gives more flexibility to the code
+    self.position             = position
+    self.orientation          = orientation
+    self.starting_position    = position.dup
+    self.starting_orientation = orientation.dup
+    self.step                 = 1 #indicating the speed of the car, and make more right the rover to exist, apart from holding together the position and orientation, gives more flexibility to the code
   end
 
   def perform_instructions instructions
