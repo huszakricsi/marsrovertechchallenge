@@ -16,6 +16,10 @@ execute: `bundle install`
 
  To run the application with an example file, run `EXAMPLE=true bin/app`.
 
+ To run the application with visualisation, run `VISUALISE=true bin/app`.
+
+ To run the application with both example file and visualisation, run `VISUALISE=true EXAMPLE=true bin/app`.
+
 ## TEST
 
 You can run tests by: `rspec`.
